@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN</title>
+</head>
+<style>
+    body{
+        background: #60a3bc;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    input[type='number']{
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: rgba(255, 255, 255, 0.7);
+            text-align: center;
+     }
+     .container1 .the{
+        margin-top:5px ;
+     }
+     .container2 .the{
+         
+        margin-top:5px ;
+     }
+</style>
+<body>
+    
+        <table>
+            <tr>
+                <td><input type="number" id="a"></td>
+                <td><input type="number" id="b"></td>
+                <td><input type="number" id="c"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="d"></td>
+                <td><input type="number" id="f"></td>
+                <td><input type="number" id="g"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="h"></td>
+                <td><input type="number" id="i"></td>
+                <td><input type="number" id="k"></td>
+            </tr>
+        </table>
+    
+    <input type="button" value="+">
+    
+<table>
+    <tr>
+        <td><input type="number" id="a1"></td>
+        <td><input type="number" id="b1"></td>
+        <td><input type="number" id="c1"></td>
+    </tr><br>
+    <tr>
+        <td><input type="number" class="the" id="d1"></td>
+        <td><input type="number" class="the" id="f1"></td>
+        <td><input type="number" class="the" id="g1"></td>
+    </tr><br>
+    <tr>
+        <td><input type="number" class="the" id="h1"></td>
+        <td><input type="number" class="the" id="i1"></td>
+        <td><input type="number" class="the" id="k1"></td>
+    </tr>
+</table>
+    
+    <input type="button" value="=" onclick="calc()">
+   <table>
+    <tr>
+        <td><input type="number"   id="kq" ></td>
+        <td><input type="number"   id="kq1"></td>
+        <td><input type="number"   id="kq2"></td>
+    </tr><br>
+    <tr>
+        <td><input type="number"   class="the"  id="kq3"></td>
+        <td><input type="number"   class="the"  id="kq4"></td>
+        <td><input type="number"  class="the"  id="kq5"></td>
+    </tr><br>
+    <tr>
+        <td><input type="number"   class="the"  id="kq6"></td>
+        <td><input type="number"  class="the"  id="kq7"></td>
+        <td><input type="number"   class="the"  id="kq8"></td>
+    </tr>
+   </table>
+        
+    <script>
+        var kq=document.getElementById('kq')
+        var kq1=document.getElementById('kq1')
+        var kq2=document.getElementById('kq2')
+        var kq3=document.getElementById('kq3')
+        var kq4=document.getElementById('kq4')
+        var kq5=document.getElementById('kq5')
+        var kq6=document.getElementById('kq6')
+        var kq7=document.getElementById('kq7')
+        var kq8=document.getElementById('kq8')
+        var a=document.getElementById('a')
+        var b=document.getElementById('b')
+        var c=document.getElementById('c')
+        var d=document.getElementById('d')
+        var f=document.getElementById('f')
+        var g=document.getElementById('g')
+        var h=document.getElementById('h')
+        var i=document.getElementById('i')
+        var k=document.getElementById('k')
+        var a1=document.getElementById('a1')
+        var b1=document.getElementById('b1')
+        var c1=document.getElementById('c1')
+        var d1=document.getElementById('d1')
+        var f1=document.getElementById('f1')
+        var g1=document.getElementById('g1')
+        var h1=document.getElementById('h1')
+        var i1=document.getElementById('i1')
+        var k1=document.getElementById('k1')
+        function calc(){
+            
+            kq.value=parseFloat(a.value)+parseFloat(a1.value)
+            kq1.value=parseFloat(b.value)+parseFloat(b1.value)
+            kq2.value=parseFloat(c.value)+parseFloat(c1.value)
+            kq3.value=parseFloat(d.value)+parseFloat(d1.value)
+            kq4.value=parseFloat(f.value)+parseFloat(f1.value)
+            kq5.value=parseFloat(g.value)+parseFloat(g1.value)
+            kq6.value=parseFloat(h.value)+parseFloat(h1.value)
+            kq7.value=parseFloat(i.value)+parseFloat(i1.value)
+            kq8.value=parseFloat(k.value)+parseFloat(k1.value)
+        }
+    </script>
+</body>
+</html>

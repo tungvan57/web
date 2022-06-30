@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Music</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styleMusic.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:400,700%7cPoppins:300,400,400i,600,600i,700,800,900">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript" src="js/js1.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="header">
+
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" height="80px">
+        </a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+         
+         
+            <li class="nav-item">
+              <a class="nav-link" href="#">Phieu Concert</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Singers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>    
+          </ul>
+          <button class="buy" data-toggle="modal" data-target="#myModal" onclick="getFood('vé xem phim')">Buy ticket</button>
+        </div>  
+      </nav>
+
+
+    </div>
+  </header>
+  <section>
+    <div id="banner">
+      <div class="contain">
+        <div class="time">
+          <p>00</p>
+          <p>Days</p>
+        </div>
+        <div class="time">
+          <p>00</p>
+          <p>Hour</p>
+        </div>
+        <div class="time">
+          <p>00</p>
+          <p>Minute</p>
+        </div>
+        <div class="time">
+          <p>00</p>
+          <p>Second</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class=" text-center container" id="about">
+      <h1 class="hello" data-aos="fade-up"  data-aos-anchor-placement="bottom-bottom">HẾ LÔ,</h1>
+      <p class="chaomung mb-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Chào mừng tới với tụi tui.</p>
+      <p class="gioithieu" data-aos="fade-up">Phiêu là một concert được tổ chức tại TP.Hồ Chí Minh vào #muamuanay. Tụi tui muốn trở thành một cây kem âm nhạc mang nhiều mùi vị mà các bạn yêu thích. Tới chơi với tụi tui nha!</p>
+      <div class="show mb-5" data-aos="fade-up"  data-aos-anchor-placement="bottom-bottom">
+        <div class="left">
+          <h1><span>05</span></h1>
+        </div>
+        <div class="right">
+          <span>OCTOBER 2019</span><br>
+          <span>KĐT Sala, Mai Chí Thọ, Quận 2, TP.HCM</span>
+        </div>
+      </div>
+      <button class="buy"  data-aos="fade-up"  data-aos-anchor-placement="bottom-bottom" data-toggle="modal" data-target="#myModal" onclick="getFood('vé xem phim')">Buy ticket</button>
+    </div>
+  </section>
+  <section>
+  <div id="listSinger">
+    <div id="demo" class="carousel slide" data-ride="carousel" style="height: auto">
+     <div class="singer">
+       <h2 class="heading text-center">Who will come?</h2>
+     </div>
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="img">
+            <img src="images/namkun.png" alt="">
+            <img   src="images/jiinguyen.png" alt="">
+            <img  src="images/tientien.png" alt="">
+          </div>
+        </div>
+        <div class="carousel-item">
+         <div class="img">
+            <img class="mw-100"  src="images/monocycle.png" alt="" width="100%">
+            <img class="mw-100"  src="images/klaf.png" alt="" width="100%">
+            <img class="mw-100"  src="images/osad.png" alt="" width="100%">
+          </div>
+        </div>
+        <div class="carousel-item">
+         <div class="img">
+            <img class="mw-100"  src="images/thinhsuy.png" alt="" width="100%">
+            <img  class="mw-100"  src="images/namkun.png" alt=""width="100%">
+            <img class="mw-100"  src="images/tientien.png" alt="" width="100%">
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+  </div>
+  </div>
+  </section>
+  <section>
+    <div id="product">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 text-center dau " data-aos="fade-up"  >
+            <div class="innerDau">
+              <img src="images/daudo.png" width="100px">
+            <p class="name">Đậu Đỏ</p>
+            <p class="price">320k</p>
+             <button class="buy sold " data-toggle="modal" data-target="#myModal" onclick="getFood('trà sữa đậu đỏ')">SOLD OUT</button>
+            </div>
+          </div>
+           <div class="col-sm-6 col-md-3 text-center dau" data-aos-delay="300"  data-aos="fade-up">
+            <div class="innerDau">
+            <img src="images/khoaimon.png" width="100px">
+            <p class="name">Khoai Môn</p>
+            <p class="price">320k</p>
+             <button class="buy sold " data-toggle="modal" data-target="#myModal" onclick="getFood'trà sữa khoai môn ')">SOLD OUT</button>
+           </div>
+          </div>
+           <div class="col-sm-6 col-md-3 text-center dau" data-aos-delay="600"  data-aos="fade-up">
+            <div class="innerDau">
+            <img src="images/bacha.png" width="100px">
+            <p class="name">Bạc Hà</p>
+            <p class="price">320k</p>
+             <button class="buy sold " data-toggle="modal" data-target="#myModal" onclick="getFood('trà sữa bạc hà ')">SOLD OUT</button>
+           </div>
+          </div>
+           <div class="col-sm-6 col-md-3 text-center dau" data-aos-delay="900"  data-aos="fade-up">
+            <div class="innerDau">
+            <img src="images/socola.png" width="100px">
+            <p class="name">Socola</p>
+            <p class="price">320k</p>
+             <button class="buy sold " data-toggle="modal" data-target="#myModal" onclick="getFood('trà sữa socola ')">SOLD OUT</button>
+           </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-4 text-center dau" data-aos-delay="0"  data-aos="fade-up">
+            <div class="innerDau">
+            <img src="images/phanquang.png" width="100px">
+            <p class="name">ÁO THUN PHẢN QUANG</p>
+             <button class="buy sold " data-toggle="modal" data-target="#myModal" onclick="getFood('ÁO THUN PHẢN QUANG')">Buy Now</button>
+           </div>
+          </div>
+           <div class="col-sm-6 col-md-4 text-center dau" data-aos-delay="300"  data-aos="fade-up">
+            <div class="innerDau">
+            <img src="images/hologram.png" width="100px">
+            <p class="name">BÌNH NƯỚC HOLOGRAM</p>
+             <button class="buy sold " data-toggle="modal" data-target="#myModal" onclick="getFood('BÌNH NƯỚC HOLOGRAM')">Buy Now</button>
+           </div>
+          </div>
+           <div class="col-sm-6 col-md-4 text-center dau" data-aos-delay="600"  data-aos="fade-up">
+            <div class="innerDau">
+            <img src="images/combo.png" width="100px">
+            <p class="name">COMBO ẤN PHẨM</p>
+             <button class="buy sold " data-toggle="modal" data-target="#myModal" onclick="getFood('combo ấn phẩm')">Buy Now</button>
+           </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <div class="footer-inner">
+        <div class="container py-5">
+          <div class="row">
+                <div class="col-sm-4 box">
+                  <img src="images/logo.png" width="100%">
+                </div>
+                 <div class="col-sm-4 box">
+                  <h1 class="title mb-3">PHIÊU CONCERT</h1>
+                  <p class="time">05 OCTOBER, 2019</p>
+                  <address class="address">Sala City, 10 Mai Chi Tho, Thu Thiem New Urban Area, District 2, HCMC</address>
+                </div>
+                <div class="col-sm-4 box">
+                     <h1 class="title mb-3"> SOCIAL CONNECTION</h1>
+                     <p class="address">You should connect social area</p>
+                     <p class="address">for Any update</p>
+                     <div class="icon">
+                      <a href="#"> <i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                  </div>
+            </div>
+             <div class="last">
+         <p>© Second covid-19 year - Tan Nguyen</p>
+       </div>
+     </div>
+   </div>
+ </div>
+</footer>
+<div class="container">
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Xác nhận đơn hàng</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         <input type="text" class="form-control form-control-md" placeholder="Nhập tên" id="ten"><br>
+          <input type="text" class="form-control form-control-md" placeholder="Nhập Số lượng: 1" id="soluong"><br>
+           <input type="email" class="form-control form-control-md" placeholder="Nhập Email" id="email"><br>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-success" data-dismiss="modal" onclick="send()">Mua</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
+
+

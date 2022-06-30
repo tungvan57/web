@@ -1,0 +1,627 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background:url(../imgs/background6.png);
+    width: 100%;
+    height: 100vh;
+    background-position:center;
+    background-size: cover;
+    animation: back 16s linear infinite;
+}
+/* @keyframes back {
+    0%{
+        filter: brightness(50%);
+    }
+    50%{
+        filter: brightness(150%);
+        animation-delay: 4s;
+    }
+    80%{
+        filter: brightness(200%);
+    }
+}  */
+.sao img:nth-child(1) {
+    height: 100px;
+    position: absolute;
+    top:95px;
+    left:385px;
+    animation: sao 4s linear infinite;
+}
+@keyframes sao {
+    0%{
+        filter: brightness(130%);
+    }
+    50%{
+        filter: brightness(200%);
+    }
+    100%{
+        filter: brightness(80%);
+    }
+
+}
+.sao img:nth-child(2) {
+    height: 100px;
+    position: absolute;
+    top:20px;
+    left:200px;
+    animation: sao2 4s linear infinite;
+}
+@keyframes sao2 {
+    0%{
+        filter: brightness(50%);
+    }
+    50%{
+        filter: brightness(200%);
+    }
+    100%{
+        filter: brightness(130%);
+    }
+
+}
+.sao img:nth-child(3) {
+    height:29px;
+    position: absolute;
+    top:132px;
+    left:196px;
+    animation: sao3 4s linear infinite;
+}
+@keyframes sao3 {
+    0%{
+        filter: brightness(80%);
+    }
+    50%{
+        filter: brightness(150%);
+    }
+    100%{
+        filter: brightness(100%);
+    }
+
+}
+.sao img:nth-child(4) {
+    height: 15px;
+    position: absolute;
+    top:50px;
+    left:500px;
+    animation: sao4 4s linear infinite;
+}
+@keyframes sao4 {
+    0%{
+        filter: brightness(80%);
+    }
+    50%{
+        filter: brightness(150%);
+    }
+    100%{
+        filter: brightness(130%);
+    }
+
+}
+.sao img:nth-child(5) {
+    height: 35px;
+    position: absolute;
+    top:87px;
+    left:500px;
+    animation: sao5 4s linear infinite;
+}
+@keyframes sao5 {
+    0%{
+        filter: brightness(70%);
+    }
+    50%{
+        filter: brightness(160%);
+    }
+    100%{
+        filter: brightness(120%);
+    }
+}
+.sao img:nth-child(6) {
+    height: 11px;
+    position: absolute;
+    top:60px;
+    left:900px;
+    animation: sao6 4s linear infinite;
+}
+@keyframes sao6 {
+    0%{
+        filter: brightness(60%);
+    }
+    50%{
+        filter: brightness(150%);
+    }
+    100%{
+        filter: brightness(100%);
+    }
+}
+.sao img:nth-child(7) {
+    height: 15px;
+    position: absolute;
+    top:90px;
+    left:50px;
+    animation: sao7 4s linear infinite;
+}
+@keyframes sao7 {
+    0%{
+        filter: brightness(50%);
+    }
+    50%{
+        filter: brightness(180%);
+    }
+    100%{
+        filter: brightness(120%);
+    }
+
+}
+.sao img:nth-child(8) {
+    height:15px;
+    position: absolute;
+    top:60px;
+    left:451px;
+    animation: sao8 4s linear infinite;
+}
+@keyframes sao8 {
+    0%{
+        filter: brightness(60%);
+    }
+    50%{
+        filter: brightness(180%);
+    }
+    100%{
+        filter: brightness(120%);
+    }
+
+}
+.sao img:nth-child(9) {
+    height: 15px;
+    position: absolute;
+    top:50px;
+    left:456px;
+    animation: sao9 4s linear infinite;
+}
+@keyframes sao9 {
+    0%{
+        filter: brightness(70%);
+    }
+    50%{
+        filter: brightness(140%);
+    }
+    100%{
+        filter: brightness(120%);
+    }
+
+}
+.sao img:nth-child(10) {
+    height: 300px;
+    position: absolute;
+    top:5px;
+    left:-10px;
+    
+    animation: sao10 4s linear infinite;
+}
+@keyframes sao10 {
+    0%{
+        filter: brightness(80%);
+    }
+    50%{
+        filter: brightness(180%);
+    }
+    100%{
+        filter: brightness(120%);
+    }
+
+}
+.sao img:nth-child(11) {
+    height: 300px;
+    position: absolute;
+    top:0px;
+    left:540px;
+    animation: sao11 4s linear infinite;
+}
+@keyframes sao11 {
+    0%{
+        filter: brightness(80%);
+    }
+    50%{
+        filter: brightness(160%);
+    }
+    100%{
+        filter: brightness(120%);
+    }
+
+}
+.sao img:nth-child(12) {
+    height: 300px;
+    position: absolute;
+    top:10px;
+    left:1000px;
+    animation: sao10 4s linear infinite;
+}
+@keyframes sao12 {
+    0%{
+        filter: brightness(90%);
+    }
+    50%{
+        filter: brightness(160%);
+    }
+    100%{
+        filter: brightness(120%);
+    }
+
+}
+.sao img:nth-child(13) {
+    height: 150px;
+    position: absolute;
+    top:250px;
+    left:-10px;
+    animation: sao13 4s linear infinite;
+}
+@keyframes sao13 {
+    0%{
+        filter: brightness(110%);
+    }
+    50%{
+        filter: brightness(150%);
+    }
+    100%{
+        filter: brightness(100%);
+    }
+
+}
+.sao img:nth-child(14) {
+    height: 160px;
+    position: absolute;
+    top:255px;
+    left:500px;
+    animation: sao14 4s linear infinite;
+}
+@keyframes sao14 {
+    0%{
+        filter: brightness(50%);
+    }
+    50%{
+        filter: brightness(150%);
+    }
+    100%{
+        filter: brightness(80%);
+    }
+
+}
+.sao img:nth-child(15) {
+    height: 170px;
+    position: absolute;
+    top:260px;
+    left:1000px;
+    animation: sao15 4s linear infinite;
+}
+@keyframes sao15 {
+    0%{
+        filter: brightness(60%);
+    }
+    50%{
+        filter: brightness(150%);
+    }
+    100%{
+        filter: brightness(120%);
+    }
+
+}
+.moon img:nth-child(1){
+    height: 100px;
+    position: absolute;
+    animation: moon 8s linear infinite;
+}
+@keyframes moon {
+    0%{
+        filter: brightness(50%);
+        top: 20%;
+        left: -10%;
+    }
+    50%{
+        filter: brightness(150%);
+    }
+    100%{
+        height: 50px;
+        filter: brightness(100%);
+        top: 10%;
+        left: 110%;
+    }
+}
+
+.tree img:nth-child(1){
+    
+    height: 260px;
+    position: absolute;
+    top:420px;
+    left:70px;
+    animation: tree 4s linear infinite;
+}
+.saobang img:nth-child(1){
+    height: 20px;
+    position: absolute;
+    transform: rotate(-50deg);
+    animation: tia 4s linear 4s infinite;
+}
+@keyframes tia {
+    0%{
+        top:80%;
+        left:110%
+    }
+    100%{
+        top:30%;
+        left:50%;
+    }
+}
+.saobang img:nth-child(2){
+    height: 20px;
+    position: absolute;
+    transform: rotate(-50deg);
+    animation: tia1 4s linear 4s infinite;
+}
+@keyframes tia1 {
+    0%{
+        top:80%;
+        left:110%
+    }
+    100%{
+        top:25%;
+        left:50%;
+    }
+}
+.phaohoa {
+    background: url(../imgs/phaohoa.png);
+    width: 0%;
+    height: 100vh;
+    background-size: cover;
+    position: absolute;
+    top:5%;
+    left:10%;
+    animation: phaohoa 1s linear 8s  ;
+
+}
+@keyframes phaohoa {
+    100%{
+        width: 100%;  
+    }
+    
+}
+/* @keyframes
+{
+    0%{
+        filter: brightness(100%);
+    }
+    50%{
+        filter: brightness(200%);
+    }    
+    100%{
+        filter: brightness(150%);
+    }
+} */
+.tree{
+    position: absolute;
+   
+}
+ 
+ .tree img:nth-child(2){
+    height:65px;
+    position: absolute;
+    top:470px;
+    left:1350px;
+ }
+/* .sky img:nth-child(1){
+    position: absolute;
+   
+    height: 100px;
+    animation: sky 8s linear infinite;
+}
+.sky img:nth-child(2){
+    position: absolute;
+    
+    height: 100px;
+    animation: sky1 8s linear infinite;
+}
+@keyframes sky 
+{
+    0%{
+        top: 10%;
+        left:-10%;
+    }   
+    100%{
+        top:20%;
+        left: 110%;
+    }
+}
+@keyframes sky1
+{
+    0%{
+        top: 15%;
+        left:-10%;
+    }   
+    100%{
+        top:15%;
+        left: 110%;
+    }
+}
+.sky img:nth-child(3){
+    position: absolute;
+    
+    height: 150px;
+    animation: sky1 8s linear infinite;
+}
+@keyframes sky 
+{
+    0%{
+        top: 5%;
+        left:-10%;
+    }   
+    100%{
+        top:10%;
+        left: 110%;
+    }
+} */
+.light1 img:nth-child(1){
+
+    
+    height:180px;
+    position: absolute;
+    top:75%;
+    left:40.8%;
+    animation: light 4s linear alternate infinite;
+    position: absolute;
+
+}
+@keyframes light {
+    0%{
+        filter: brightness(100%);
+    }
+    20%{
+        filter: brightness(150%);
+    }
+    40%{
+        filter: brightness(50%);
+    }
+    60%{
+        filter: brightness(150%);
+
+    }
+    80%{
+        filter: brightness(100%);
+    }
+    100%{
+        filter: brightness(200%);
+    }
+}
+.light1 img:nth-child(2){
+
+    
+    height:136px;
+    position: absolute;
+    top:69%;
+    left:48%;
+    animation: light 4s linear alternate infinite;
+    position: absolute;
+
+}
+@keyframes light {
+    0%{
+        filter: brightness(100%);
+    }
+    20%{
+        filter: brightness(150%);
+    }
+    40%{
+        filter: brightness(50%);
+    }
+    60%{
+        filter: brightness(150%);
+
+    }
+    80%{
+        filter: brightness(100%);
+    }
+    100%{
+        filter: brightness(200%);
+    }
+}
+.light1 img:nth-child(3){
+
+    
+    height:112px;
+    position: absolute;
+    top:65%;
+    left:54.4%;
+    animation: light 4s linear alternate infinite;
+    position: absolute;
+
+}
+@keyframes light {
+    0%{
+        filter: brightness(100%);
+    }
+    20%{
+        filter: brightness(150%);
+    }
+    40%{
+        filter: brightness(50%);
+    }
+    60%{
+        filter: brightness(150%);
+
+    }
+    80%{
+        filter: brightness(100%);
+    }
+    100%{
+        filter: brightness(200%);
+    }
+}
+.light1 img:nth-child(4){
+
+    
+    height:90px;
+    position: absolute;
+    top:62%;
+    left:59.4%;
+    animation: light 4s linear alternate infinite;
+    position: absolute;
+
+}
+@keyframes light {
+    0%{
+        filter: brightness(100%);
+    }
+    20%{
+        filter: brightness(150%);
+    }
+    40%{
+        filter: brightness(50%);
+    }
+    60%{
+        filter: brightness(150%);
+
+    }
+    80%{
+        filter: brightness(100%);
+    }
+    100%{
+        filter: brightness(200%);
+    }
+}
+.house img:nth-child(1){
+    
+    position: absolute;
+    top: 48%;
+    left: 44%;
+    height: 240px;
+    animation: house 8s linear alternate infinite;
+    
+}
+.house img:nth-child(2){
+    
+    position: absolute;
+    top:40%;
+    left:20%;
+    height: 420px;
+   transform: rotateX(60%);
+    animation: house 8s linear alternate infinite;
+    
+}
+
+
+
+/* .rain img:nth-child(1){
+    position: absolute;
+   
+    height: 500px;
+    animation: rain .3s linear infinite;
+}
+@keyframes rain {
+    0%{
+        top:0%;
+    }
+    100%{
+        top:20%;
+    }
+
+} */

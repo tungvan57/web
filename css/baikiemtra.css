@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}

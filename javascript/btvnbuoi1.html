@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải phương trình bậc 2</title>
+</head>
+<body>
+    
+    <input type="number" placeholder="Nhập a" id="a"><br>
+     <input type="number" placeholder="Nhập b" id="b"><br>
+     <input type="number" placeholder="Nhập c" id="c"><br>
+     
+     <button onclick="giai()">Giải phương trình bậc 2</button><br>
+     <textarea id="kq" name="description"  cols="50" rows="5">
+     </textarea>
+    <script>
+        var input=document.getElementsByTagName('input')
+        var kq=document.getElementById('kq')
+       
+        //ax^2+bx+c=0
+        function giai(){
+            var a=input[0].value
+            var b=input[1].value
+            var c=input[2].value
+           if(a==0){
+               if(b==0){
+                   if(c==0){
+                       kq.value='Phương trình vô số nghiệm'
+                   }
+                   else{
+                       kq.value='Phương trình vô nghiệm'
+                   }
+               }
+               else{
+                   kq.value='Phương trình có 1 nghiệm = '+ parseFloat(-c/b).toFixed(2)
+               }
+           }
+           else{
+               var delta=b*b-4*a*c;
+               kq.value="Do delta = "+delta+"\n"
+               if(delta==0){
+                   kq.value+='Phương trình có nghiệm kép : '+parseFloat(-b/(2*a)).toFixed(2)
+               }
+               else if(delta<0){
+                   kq.value+="Phương trình vô nghiệm"
+               }
+               else{
+                kq.value+="Phương trình có 2 nghiệm phân biệt :\n"+"x1 = "+parseFloat((-b+Math.sqrt(delta))/(2*a)).toFixed(2)+"\n"+"x2 = "+parseFloat((-b-Math.sqrt(delta))/(2*a)).toFixed(2)
+               }
+
+
+           }
+            
+            
+
+        }
+    </script>
+</body>
+</html>
